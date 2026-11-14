@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Особенное поздравление с днём рождения">
+    <title>С любовью и теплом ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+
+
+    <!-- Начальный экран с подарком -->
+    <section class="gift-intro" id="giftIntro">
+
+        <div class="gift-intro-content">
+
+            <p class="gift-subtitle">ОСОБЕННЫЙ ПОДАРОК</p>
+
+            <h1 class="gift-title">
+                Для Вас с любовью
+            </h1>
+
+            <p class="gift-description">
+                Мы приготовили для Вас кое-что особенное...
+            </p>
+
+            <button class="gift-button" id="giftButton" aria-label="Открыть подарок">
+
+                <span class="gift-box">
+
+                    <span class="gift-lid">
+                        <span class="gift-bow"></span>
+                    </span>
+
+                    <span class="gift-body">
+                        <span class="gift-ribbon"></span>
+                    </span>
+
+                </span>
+
+            </button>
+
+            <p class="gift-hint">
+                Нажмите на подарок, чтобы открыть ♡
+            </p>
+
+        </div>
+
+    </section>
+
+    <div class="background-glow"></div>
+    <div class="particles" id="particles"></div>
+
+    <main class="page">
+
+        <section class="hero">
+            <div class="decorative-line"></div>
+
+            <p class="subtitle">СЕГОДНЯ ОСОБЕННЫЙ ДЕНЬ</p>
+
+            <h1>
+                С днём рождения!
+            </h1>
+
+            <p class="hero-description">
+                Для Вас подготовлено кое-что особенное...
+            </p>
+
+            <div class="heart">♡</div>
+
+            <p class="instruction">
+                Откройте конверты, каждый из них хранит
+                частичку тепла и любви
+            </p>
+        </section>
+
+        <section class="envelopes-section">
+
+            <div class="envelopes-grid">
+
+                <button class="envelope" data-envelope="1">
+                    <span class="envelope-number">1</span>
+                    <span class="envelope-icon">✉</span>
+                    <span class="envelope-label">Тёплые слова</span>
+                    <span class="seal">♡</span>
+                </button>
+
+                <button class="envelope" data-envelope="2">
+                    <span class="envelope-number">2</span>
+                    <span class="envelope-icon">✉</span>
+                    <span class="envelope-label">Прекрасные моменты</span>
+                    <span class="seal">♡</span>
+                </button>
+
+                <button class="envelope" data-envelope="3">
+                    <span class="envelope-number">3</span>
+                    <span class="envelope-icon">✉</span>
+                    <span class="envelope-label">Пожелания</span>
+                    <span class="seal">♡</span>
+                </button>
+
+                <button class="envelope" data-envelope="4">
+                    <span class="envelope-number">4</span>
+                    <span class="envelope-icon">✉</span>
+                    <span class="envelope-label">С любовью</span>
+                    <span class="seal">♡</span>
+                </button>
+
+                <button class="envelope" data-envelope="5">
+                    <span class="envelope-number">5</span>
+                    <span class="envelope-icon">✉</span>
+                    <span class="envelope-label">От всего сердца</span>
+                    <span class="seal">♡</span>
+                </button>
+
+                <button class="envelope" data-envelope="6">
+                    <span class="envelope-number">6</span>
+                    <span class="envelope-icon">✉</span>
+                    <span class="envelope-label">Особенный момент</span>
+                    <span class="seal">♡</span>
+                </button>
+
+            </div>
+
+            <div class="main-envelope-wrapper">
+
+                <button class="envelope main-envelope" data-envelope="7">
+
+                    <span class="envelope-number">7</span>
+
+                    <span class="main-envelope-title">
+                        Самое главное письмо
+                    </span>
+
+                    <span class="main-envelope-description">
+                        Для Вас — с самыми искренними чувствами
+                    </span>
+
+                    <span class="main-seal">♡</span>
+
+                    <span class="main-envelope-hint">
+                        Открыть главное поздравление
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>С любовью и самыми тёплыми пожеланиями ♡</p>
+        </footer>
+
+    </main>
+
+    <!-- Окно открытого письма -->
+    <div class="letter-overlay" id="letterOverlay">
+
+        <div class="letter-window" id="letterWindow">
+
+            <button class="close-letter" id="closeLetter" aria-label="Закрыть письмо">
+                ×
+            </button>
+
+            <div class="letter-decoration">♡</div>
+
+            <p class="letter-number" id="letterNumber">
+                ПИСЬМО № 01
+            </p>
+
+            <h2 id="letterTitle">
+                Тёплые слова
+            </h2>
+
+            <div class="letter-divider"></div>
+
+            <div class="letter-content" id="letterContent">
+                Здесь появится текст письма.
+            </div>
+
+            <!-- Место для фотографий и видео -->
+            <div class="letter-media" id="letterMedia"></div>
+
+            <div class="letter-bottom">С теплом и любовью ♡</div>
+
+        </div>
+
+    </div>
+
+    <div class="photo-lightbox" id="photoLightbox" aria-hidden="true">
+        <button class="photo-lightbox-close" id="photoLightboxClose" aria-label="Закрыть фотографию">×</button>
+        <img id="lightboxImage" src="" alt="">
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <audio id="birthdayMusic" src="music/birthday.mp3" preload="auto"></audio>
+
+    <script src="script.js?v=3"></script>
+</body>
+</html>
